@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form action="/books" method="POST">
+    <div>
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title" placeholder="e.g The Bible" required autofocus>
+    </div>
+    <div>
+        <label for="genre">Genre:</label>
+        <input type="text" name="genre" id="genre" placeholder="fiction" required>
+    </div>
+    <div>
+        <label for="publisher">Publisher:</label>
+        <input type="text" name="publisher" id="publisher" placeholder="Ladybird" required>
+        
+    </div>
+    <div>
+    <label for="author">Author:</label>
+    <input type="text" name="author" id="author" placeholder="John Steinbeck" required>
+    </div>
+    
+    <button type="submit">Add Book</button>
+</form>
+  
+{% endblock content %}
